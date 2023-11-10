@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.title {
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/**
+* common
+*/
+.btn {
+  min-width: 80px;
+  height: 40px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+.btn.btn_add {
+  background-color: #28a744;
+}
+.btn.btn_complete {
+  background-color: #2a7bff;
+}
+.btn.btn_back {
+  background-color: #2ca2b8;
+}
+.btn.btn_delete {
+  background-color: #dc3545;
+}
+
+.btn + .btn {
+  margin-left: 4px;
+}
+
+.input {
+  width: calc(100% - 80px - 8px);
+  height: 36px;
+  padding: 0px 8px;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/**
+* inputArea
+*/
+#inputArea {
+  margin-bottom: 40px;
+}
+
+/**
+* todoArea
+*/
+.todoArea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.todoArea_title {
+  font-size: 16px;
+  background-color: #eee;
+  margin: 0;
+  padding: 8px;
+}
+
+.todoArea__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.todoArea__item + .todoArea__item {
+  margin-top: 8px;
+}
+
+.todoArea__item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.todoArea__item p::before {
+  content: " ・";
+  display: block;
+}
+
+.todoArea__control {
+  margin-left: auto;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vanillaJS_todo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./index.mjs" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">TODOアプリ</h1>
+      <!-- 入力エリア -->
+      <section id="inputArea" class="inputArea">
+        <div class="flex">
+          <input id="addText" class="input" placeholder="TODOを追加する" />
+          <button id="addBtn" class="btn btn_add">追加</button>
+        </div>
+      </section>
+      <!-- 未完了リスト -->
+      <section class="todoArea">
+        <h2 class="todoArea_title">未完了のTODO</h2>
+        <ul id="incompleteList" class="todoArea__list">
+          <!-- <li class="todoArea__item flex">
+            <p class="flex">TODO1です</p>
+            <div class="todoArea__control flex">
+              <button class="btn btn_complete">完了</button>
+              <button class="btn btn_delete">削除</button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <!-- 完了リスト -->
+      <section class="todoArea">
+        <h2 class="todoArea_title">完了したTODO</h2>
+        <ul id="completeList" class="todoArea__list">
+          <!-- <li class="todoArea__item flex">
+            <p class="flex">TODO1です</p>
+            <div class="todoArea__control flex">
+              <button class="btn btn_back">戻す</button>
+              <button class="btn btn_delete">削除</button>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
